@@ -11,10 +11,10 @@ const Table = () => {
     const [womenOpenedChild, setWomenOpenedChild] = useState(false)
     const [womenOpenedOld, setWomenOpenedOld] = useState(false)
 
-    function openClick(params) {
-        if (params === "Men") {
+    function openClick(props) {
+        if (props === "Men") {
           return setMenOpened(!menOpened)
-        } else if (params === "Women") {
+        } else if (props === "Women") {
             return setWomenOpened(!womenOpened)
         }
     }
