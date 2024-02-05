@@ -48,7 +48,7 @@ const Table = () => {
                         <tr>
                             <td>{index + 1}</td>
                             <td style={{fontWeight: '900'}} className="menClosed" onClick={() => openClick(genderData.name)}>
-                            {genderData.name == 'Men' ? (menOpened ? " - " :" + ") : genderData.name == 'Women' ? (womenOpened ?  " - " : " + ") : null}{genderData.name} 
+                            {genderData.name === 'Men' ? (menOpened ? " - " :" + ") : genderData.name === 'Women' ? (womenOpened ?  " - " : " + ") : null}{genderData.name} 
                             </td>
                             <td></td>
                         </tr>
