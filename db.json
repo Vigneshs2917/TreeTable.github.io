@@ -36,11 +36,11 @@
             "adult": {
                 "name": "Adult",
                 "data":[
-                {"id": 1, "name": "priya", "age": 18},
-                {"id": 2, "name": "Swathi", "age": 18},
+                {"id": 1, "name": "Priya", "age": 21},
+                {"id": 2, "name": "Swathi", "age": 17},
                 {"id": 3, "name": "anusri", "age": 18},
-                {"id": 4, "name": "megna", "age": 18},
-                {"id": 5, "name": "dharshini", "age": 18}
+                {"id": 4, "name": "megna", "age": 16},
+                {"id": 5, "name": "dharshini", "age": 20}
             ]},
             "child": {
                 "name": "Child",
