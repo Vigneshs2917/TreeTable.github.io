@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import data from "./data.json"
+import axios from "axios";
 
 const Table = () => {
+    const [data, setData] = useState([])
     const [menOpened, setMenOpened] = useState(false)
     const [womenOpened, setWomenOpened] = useState(false)
     const [menOpenedAdult, setMenOpenedAdult] = useState(false)
@@ -10,6 +11,10 @@ const Table = () => {
     const [womenOpenedAdult, setWomenOpenedAdult] = useState(false)
     const [womenOpenedChild, setWomenOpenedChild] = useState(false)
     const [womenOpenedOld, setWomenOpenedOld] = useState(false)
+
+    useEffect(()=>{
+        axios.get('http://localhost:8001/0').then((res)=>{setData(res.data)}).catch((err)=>{console.log(err);});
+    }, [])
 
     function openClick(props) {
         if (props === "Men") {
